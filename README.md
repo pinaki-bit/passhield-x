@@ -74,7 +74,7 @@ npm run dev
 
 ---
 
-## 🧠 Design Philosophy: The $500k Aesthetic
+## 🧠 Design Philosophy: The $5k Aesthetic
 When building PASSHIELD-X, the goal was to avoid "game-like" chaotic cyber aesthetics. Instead, the UI is modeled after high-end enterprise security firms.
 - **Deep Obsidian Theme:** Pure black/obsidian backgrounds ensure maximum legibility.
 - **Photorealism over Wireframes:** The 3D element uses genuine physical glass refraction (`ior`, `transmission`, `thickness`) rather than basic glowing lines, giving a sense of physical weight and real-world value.
