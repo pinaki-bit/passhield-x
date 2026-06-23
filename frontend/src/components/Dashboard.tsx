@@ -34,7 +34,7 @@ export default function Dashboard() {
     if (!password) { setAnalysis(DEFAULT_STATE); return; }
     const timer = setTimeout(async () => {
       try {
-        const res = await fetch('http://localhost:8000/api/analyze', {
+        const res = await fetch('/api/analyze', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ password }),
