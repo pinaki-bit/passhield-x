@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=SF+Pro+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Ultra Premium Dark */
+    --background: #050507;
+    --foreground: #ffffff;
+    --muted: #a1a1aa;
+
+    /* Subtle Premium Accents */
+    --accent-blue: #8BA6D5;
+    --accent-violet: #9D8DF1;
+    
+    --card: rgba(15, 15, 20, 0.4);
+    --card-border: rgba(255, 255, 255, 0.06);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-[var(--background)] text-[var(--foreground)];
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  /* Elegant, highly polished frosted glass */
+  .glass-panel {
+    @apply bg-[var(--card)] backdrop-blur-2xl border border-[var(--card-border)] rounded-2xl shadow-[0_8px_32px_rgba(0,0,0,0.4)];
+  }
+
+  .glass-button {
+    @apply relative overflow-hidden bg-white/5 backdrop-blur-md border border-white/10 rounded-lg transition-all duration-300 hover:bg-white/10 hover:border-white/20;
+  }
+
+  .text-gradient-premium {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-gray-500;
+  }
+  
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[var(--accent-blue)] to-[var(--accent-violet)];
+  }
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
