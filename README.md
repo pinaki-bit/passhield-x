@@ -1,6 +1,8 @@
 # PASSHIELD-X: Enterprise-Grade Vault & Entropy Engine
 
-PASSHIELD-X is a conceptual next-generation cryptographic security platform featuring an ultra-premium, $5 enterprise-grade design aesthetic. Designed to represent absolute digital sovereignty, this application provides users with an impenetrable vault experience, blending military-grade zero-knowledge architecture with highly fluid, photorealistic 3D web interactions.
+🔥 **Live Production Deployment:** [https://passhield-x.vercel.app/](https://passhield-x.vercel.app/)
+
+PASSHIELD-X is a conceptual next-generation cryptographic security platform featuring an ultra-premium, $500,000 enterprise-grade design aesthetic. Designed to represent absolute digital sovereignty, this application provides users with an impenetrable vault experience, blending military-grade zero-knowledge architecture with highly fluid, photorealistic 3D web interactions.
 
 ![PASSHIELD-X Banner](frontend/public/icons.svg) <!-- *Placeholder for repository banner* -->
 
